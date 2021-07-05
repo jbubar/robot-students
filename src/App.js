@@ -3,12 +3,15 @@ import './App.css';
 import StudentList from './components/studentList';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-      <StudentList />
-    </div>
+      <div className="App">
+        <header className="App-header">
+          'Hey'
+        </header>
+        <StudentList />
+      </div>
+
   );
 }
 

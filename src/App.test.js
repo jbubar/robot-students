@@ -1,8 +1,7 @@
 import {
   render,
   screen,
-  cleanup,
-  waitForElement
+  cleanup
 } from "@testing-library/react";
 import axiosMock from "axios";
 import App from './App';

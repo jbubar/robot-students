@@ -21,19 +21,21 @@ const data = {
     pic: "https://storage.googleapis.com/hatchways-app.appspot.com/assessments/data/frontend/images/aspernaturnonsapiente.jpg",
     skill: "Employee Handbooks"
 }
+
+
 describe("Renders the Student Component", () => {
     test("renders the correct text", () => {
-        const { getByTestId } = render(<Student data={data} />);
+        const { getByTestId } = render(<Student student={data} />);
         const { getByText } = within(getByTestId("student"));
-        expect(getByText("Email")).toBeInTheDocument();
-        expect(getByText("Company")).toBeInTheDocument();
-        expect(getByText("Skill")).toBeInTheDocument();
-        expect(getByText("Average")).toBeInTheDocument();
+        expect(getByText("Email: lromanet2@wired.com")).toBeInTheDocument();
+        expect(getByText("Company: Skalith")).toBeInTheDocument();
+        expect(getByText("Skill: Employee Handbooks")).toBeInTheDocument();
+        expect(getByText("Average: 85.75%")).toBeInTheDocument();
         expect(getByText("Laurens Romanet")).toBeInTheDocument();
     });
 
     test("renders the photo with the correct alt tag", () => {
-        const { getByAltText } = render(<Student data={data} />);
+        const { getByAltText } = render(<Student student={data} />);
         expect(getByAltText("Laurens Romanet's Avatar")).toBeInTheDocument();
     });
 })
