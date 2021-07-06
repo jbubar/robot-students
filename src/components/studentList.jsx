@@ -6,7 +6,7 @@ export default function StudentList() {
     const students = useContext(StudentContext);
 
     return (
-        <div>
+        <div className="student-list">
             {
                 students.map(student => (
                     <Student student={student} />

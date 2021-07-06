@@ -1,4 +1,17 @@
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
+  background: #EEECEE;
+  height: 100vh;
+  #root {
+   height: 100%;
+    width: 100%; 
+  }
+  .App {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
