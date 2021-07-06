@@ -31,11 +31,11 @@ describe("Renders the Student Component", () => {
         expect(getByText("Company: Skalith")).toBeInTheDocument();
         expect(getByText("Skill: Employee Handbooks")).toBeInTheDocument();
         expect(getByText("Average: 85.75%")).toBeInTheDocument();
-        expect(getByText("Laurens Romanet")).toBeInTheDocument();
+        expect(getByText("LAURENS ROMANET")).toBeInTheDocument();
     });
 
     test("renders the photo with the correct alt tag", () => {
         const { getByAltText } = render(<Student student={data} />);
-        expect(getByAltText("Laurens Romanet's Avatar")).toBeInTheDocument();
+        expect(getByAltText("Laurens Romanet's avatar")).toBeInTheDocument();
     });
 })
