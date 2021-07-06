@@ -1,6 +1,6 @@
 .student-list {
     height: 80%;
-    max-width: 920px;
+    min-width: 860px;
     margin: auto;
     overflow: auto;
     border-radius: 5px;
@@ -10,31 +10,31 @@
     display: flex;
     align-items: center;
     border-bottom: 3px solid #F7F7F6;
-    padding: 17px;
+    padding: 12px;
     background: white;
     img {
-        height: 150px;
-        width: 150px;
+        height: 125px;
+        width: 125px;
         border-radius: 50%;
         border: 2px solid #DCDCDC; 
-        margin: 0 10px;
+        margin: 0 8px;
     }
 
     .text-info {
         display: flex;
         flex-direction: column;
-        margin-left: 24px;
+        margin-left: 20px;
         h1 {
             margin: 0 0 10px 10px;
             font-weight: 700;
-            font-size: 3em;
+            font-size: 2.6em;
         }
         p {
-            margin: 4px 0 0 36px;
+            margin: 2px 0 0 34px;
             color: #595958;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 25px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 }
