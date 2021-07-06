@@ -1,0 +1,23 @@
+.student {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+    img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 1px solid darkgrey; 
+    }
+
+    .text-info {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            margin: 10px;
+        }
+        p {
+            margin: 0 20px;
+        }
+    }
+}
