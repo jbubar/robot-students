@@ -1,3 +1,8 @@
+// colors
+$light-grey: #F7F7F6;
+$grey: #DCDCDC;
+$dark-grey: #595958;
+
 .student-list {
     height: 80%;
     min-width: 860px;
@@ -9,14 +14,14 @@
 .student {
     display: flex;
     align-items: center;
-    border-bottom: 3px solid #F7F7F6;
+    border-bottom: 3px solid $light-grey;
     padding: 12px;
     background: white;
     img {
         height: 125px;
         width: 125px;
         border-radius: 50%;
-        border: 2px solid #DCDCDC; 
+        border: 2px solid $grey; 
         margin: 0 8px;
     }
 
@@ -31,7 +36,7 @@
         }
         p {
             margin: 2px 0 0 34px;
-            color: #595958;
+            color: $dark-grey;
             font-weight: 300;
             font-size: 16px;
             line-height: 22px;

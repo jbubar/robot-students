@@ -1,7 +1,8 @@
 import {
   render,
   screen,
-  cleanup
+  cleanup,
+  findByText
 } from "@testing-library/react";
 import axiosMock from "axios";
 import { StudentContextProvider } from "./utils/studentContext";

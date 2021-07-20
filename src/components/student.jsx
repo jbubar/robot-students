@@ -18,6 +18,6 @@ export default function Student({ student }) {
                 <p>{`Skill: ${student.skill}`}</p>
                 <p>{`Average: ${avgGrade(student.grades)}%`}</p>
             </div>
-        </div>
+        </div> 
     )
 }
